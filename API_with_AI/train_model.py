@@ -7,7 +7,7 @@ import joblib
 
 # Load Irirs dataset
 iris = load_iris(as_frame=True)
-X, y = iris.data, iris.target
+X, y = iris.data, iris.target # type: ignore
 
 # separates data into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y)
